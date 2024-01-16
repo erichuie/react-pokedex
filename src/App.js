@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { Pokedex } from './Pokedex';
 
@@ -6,7 +5,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <Pokedex pokemons={[
           { id: 4, name: 'Charmander', type: 'fire', base_experience: 62 },
           { id: 7, name: 'Squirtle', type: 'water', base_experience: 63 },

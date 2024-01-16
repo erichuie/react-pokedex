@@ -1,14 +1,11 @@
-function Pokedex({ pokemons }){
-  // for(const pokemon of pokemons){
-  //   return(
-  //     <Pokecard pokemon={pokemon} />
-  //   );
-  // }
+import Pokecard from './Pokecard';
 
+function Pokedex({ pokemons }){
   return(
     <div>
       <ul>
-        { pokemons.map(p => <li><Pokecard pokemon={p} /></li>) }
+        { pokemons.map(p => <Pokecard pokemon={p} />) }
+        {console.log(pokemons)}
       </ul>
     </div>
   );
