@@ -15,8 +15,10 @@ function Pokedex({ pokemons }){
   //   }
   // }
 
-  const firstHalf = pokemons.splice(0, 4);
-  const secondHalf = pokemons.slice();
+  const firstHalf = pokemons.slice(0, 4);
+  const secondHalf = pokemons.slice(4, 8);
+  console.log('firstHalf: ',  firstHalf);
+  console.log('secondHalf: ', secondHalf);
 
 
   return(
@@ -24,16 +26,10 @@ function Pokedex({ pokemons }){
       <table>
         <tbody>
           <tr>
-          { firstHalf.map(function (p){
-            <td><Pokecard pokemon={p} /></td>
-            })
-          }
+          { firstHalf.map(p => <td><Pokecard pokemon={p} /></td>) }
           </tr>
           <tr>
-          { secondHalf.map(function (p){
-            <td><Pokecard pokemon={p} /></td>
-            })
-          }
+          { secondHalf.map(p => <td><Pokecard pokemon={p} /></td>) }
           </tr>
         </tbody>
       </table>
