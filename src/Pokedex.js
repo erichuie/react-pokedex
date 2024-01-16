@@ -22,6 +22,8 @@ function Pokedex({ pokemons }){
 
 
   return(
+    // This is JSX, not html
+    // You can return an element or an array of elements.
     <div>
       <table>
         <tbody>

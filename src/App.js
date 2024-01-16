@@ -19,5 +19,6 @@ function App() {
     </div>
   );
 }
+// TODO: split pokemon(s) into its on var then pass it in.
 
 export default App;

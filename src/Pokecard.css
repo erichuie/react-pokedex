@@ -4,7 +4,9 @@
 
 .Pokecard-card{
   background-color: beige;
+  border-radius: 10px;
 }
+/* border radius to round the corners */
 
 .Pokecard-text{
   color:black;
